@@ -48,3 +48,22 @@ selectionSortbtn.addEventListener('click', async function(){
     enableSizeSlider();
     enableNewArrayBtn();
 });
+
+let arr=[];
+for(let i=0;i<101;i++){
+    arr.push(i);
+}
+let arr1=[];
+for(let i=0;i<101;i++){
+    let a=Math.floor(Math.random()*100)
+    arr1.push(a);
+}
+function display(){
+    let parent=document.querySelector(".flex-container");
+for(let i=0;i<arr.length;i++){
+    let ele = document.createElement('div');
+    ele.style.height=`${arr1[i]*5}px`;
+    parent.appendChild(ele);
+    ele.classList.add("newBars");
+}
+}
