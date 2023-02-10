@@ -15,7 +15,7 @@
     <nav>
         <div class="row">
             <div class="col gap-2 d-sm-flex" id="newArray">
-                <button type="button" onclick="display()" class="btn btn-outline-success btn-dark newArray">New Array</button>
+                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
             </div>
             <div class="col" id="input">
                 <span id="speed">Speed
@@ -44,7 +44,7 @@
     </div>
 </header>
 
-<body class="p-3 mb-2 bg-dark text-white">
+<body onload="display()" class="p-3 mb-2 bg-dark text-white">
 
     <div id="bars" class="flex-container"></div>
 
@@ -57,6 +57,7 @@
     <script src="js_files/merge.js"></script>
     <script src="js_files/quick.js"></script>
     <script src="js_files/selection.js"></script>
+    
 </body>
 
 </html>
