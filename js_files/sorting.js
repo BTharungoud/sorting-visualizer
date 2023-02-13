@@ -86,7 +86,7 @@ createNewArray();
 function createNewArray(noOfBars = 100) {
     // calling helper function to delete old bars from dom
     deleteChild();
-    
+
     // create an array of random numbers 
     arr1 = [];
     for (let i = 0; i < 101; i++) {
@@ -95,13 +95,13 @@ function createNewArray(noOfBars = 100) {
     }
     // select the div #bars element
     const bars = document.querySelector("#bars");
-    let parent = document.querySelector(".flex-container");
+
 
     // create multiple element div using loop and adding class 'bar col'
     for (let i = 0; i < noOfBars; i++) {
         let ele = document.createElement('div');//create element
         ele.style.height = `${arr1[i] * 5}px`;// update height of bar
-        parent.appendChild(ele);
+        bars.appendChild(ele);
         ele.classList.add("newBars");// add appropriate styling class to the element
         // add element to the DOM by appending to the div #bars
     }
