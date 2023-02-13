@@ -37,6 +37,11 @@ margin: 10px;
 background-color: bisque;
 }
 .newBars{
-    border-left: 6px solid yellow;
-    margin: 3px;
+    background-color: yellow;
+    border: 1pt solid black;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+#input235{
+    display: none;
 }

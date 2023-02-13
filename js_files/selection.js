@@ -4,7 +4,7 @@
 
 async function selection() {
     console.log('In selection()');
-    const ele = document.querySelectorAll(".bar");
+    const ele = document.querySelectorAll(".newBars");
     for (let i = 0; i < ele.length; i++) {
         console.log('In ith loop');
         let min_index = i;
@@ -49,10 +49,10 @@ selectionSortbtn.addEventListener('click', async function () {
     enableNewArrayBtn();
 });
 
-let arr = [];
-for (let i = 0; i < 101; i++) {
-    arr.push(i);
-}
+// let arr = [];
+// for (let i = 0; i < 101; i++) {
+//     arr.push(i);
+// }
 // let arr1 = [];
 // for (let i = 0; i < 101; i++) {
 //     let a = Math.floor(Math.random() * 100)
