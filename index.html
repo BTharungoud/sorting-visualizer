@@ -15,26 +15,24 @@
     <nav>
         <div class="row">
             <div class="col gap-2 d-sm-flex" id="newArray">
-                <button type="button" onclick="createNewArray()" class="btn btn-outline-success btn-dark newArray">New Array</button>
+                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
             </div>
-            <div class="col arr_sz" id="input">
+            <div class="col" id="input">
+                <span id="Size">Size
+                    <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                </span>
                 <span id="speed">Speed
                     <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
                 </span>
             </div>
-            <div class="col" id="input235">
-                <span id="speed">Size
-                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
-                </span>
-            </div>
             <div class="col gap-2 d-sm-flex" id="selectionSort">
-                <button type="button" onclick="selection();" class="btn btn-outline-info btn-dark selectionSort">Selection Sort</button>
+                <button type="button" class="btn btn-outline-info btn-dark selectionSort">Selection Sort</button>
             </div>
             <div class="col gap-2 d-sm-flex" id="bubbleSort">
-                <button type="button" onclick="bubble();" class="btn btn-outline-info btn-dark bubbleSort">Bubble Sort</button>
+                <button type="button" class="btn btn-outline-info btn-dark bubbleSort">Bubble Sort</button>
             </div>
             <div class="col gap-2 d-sm-flex" id="insertionSort">
-                <button type="button" onclick="insertion()" class="btn btn-outline-info btn-dark insertionSort">Insertion Sort</button>
+                <button type="button" class="btn btn-outline-info btn-dark insertionSort">Insertion Sort</button>
             </div>
             <div class="col gap-2 d-sm-flex" id="quickSort">
                 <button type="button" class="btn btn-outline-info btn-dark quickSort">Quick Sort</button>
@@ -44,9 +42,6 @@
             </div>
         </div>
     </nav>
-    <div class="container" id="container">
-      
-    </div>
 </header>
 
 <body class="p-3 mb-2 bg-dark text-white">
